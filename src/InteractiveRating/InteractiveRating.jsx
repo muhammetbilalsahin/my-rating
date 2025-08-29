@@ -1,6 +1,3 @@
-// Tam birebir Frontend Mentor Interactive Rating Component
-// Saf CSS ile React versiyonu
-
 import { useState } from 'react';
 import './InteractiveRating.css';
 
@@ -22,7 +19,7 @@ function RatingCard({ rating, setRating, onSubmit }) {
       <h1>How did we do?</h1>
       <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
       <div className="rating-group">
-        {[1,2,3,4,5].map(n => <RatingButton key={n} value={n} selected={rating} onSelect={setRating} />)}
+        {[1, 2, 3, 4, 5].map(n => <RatingButton key={n} value={n} selected={rating} onSelect={setRating} />)}
       </div>
       <button className="submit-btn" disabled={!rating} onClick={onSubmit}>Submit</button>
     </div>
